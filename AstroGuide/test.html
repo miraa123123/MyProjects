@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-down.css' rel='stylesheet'>
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="pics/logo.png" alt="Logo" width="170">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+
+                    <li class="li">
+                        <a class="nav-link t" id="ma" href="#">Science </a>  
+                            
+                        <ul id="dropdown">
+                            <li><a class="nav-link" href="Planets.html">Planets</a></li>
+                            <li><a class="nav-link" href="Stars.html">Stars</a></li>
+                            <li><a class="nav-link" href="Nebula.html">Nebulaes</a></li>
+                            <li><a class="nav-link" href="SolorSystem.html">SolorSystem</a></li>
+                            <li><a class="nav-link" href="Galaxies.html">Galaxies</a></li>
+                            <li><a class="nav-link" href="ExoPlanets.html">ExoPlanets</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="li2">
+                        <a class="nav-link t" id="ma2" href="#">Space Exploration </a> 
+                            
+                        <ul id="dropdown2">
+                            <li><a class="nav-link" href="Planets.html">Space Exploration</a></li>
+                            <li><a class="nav-link" href="Stars.html">Human Spaceflight</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="li3">
+                        <a class="nav-link t" id="ma3" href="#">Telescopes</a> 
+                            
+                        <ul id="dropdown3">
+                            <li><a class="nav-link" href="Planets.html">james webb telescope</a></li>
+                            <li><a class="nav-link" href="Stars.html">Hubble telescope</a></li>
+                        </ul>
+                    </li>
+            </ul>            
+        </nav>
+
+
+        <div id="mm" class="more">
+            <div id="more-container" class="more-container">
+                <li>
+                    <a class="nav-link-mobilee " id="ma-mobile" href="#">Science <br> <i class="gg-chevron-down"></i></a>
+                    <ul id="dropdown-mobile">
+                        <li><a class="nav-link-mobile" href="Planets.html">Planets</a></li>
+                        <li><a class="nav-link-mobile" href="Stars.html">Stars</a></li>
+                        <li><a class="nav-link-mobile" href="Nebula.html">Nebula</a></li>
+                        <li><a class="nav-link-mobile" href="SolorSystem.html">SolorSystem</a></li>
+                        <li><a class="nav-link-mobile" href="Galaxies.html">Galaxies</a></li>
+                        <li><a class="nav-link-mobile" href="ExoPlanets.html">ExoPlanet</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-link-mobilee " id="ma-mobile2" href="#">Space Exploration <br> <i class="gg-chevron-down"></i></a>
+                    <ul id="dropdown-mobile2">
+                        <li><a class="nav-link-mobile" href="Planets.html">Space Exploration</a></li>
+                        <li><a class="nav-link-mobile" href="Stars.html">Human Spaceflight</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-link-mobilee " id="ma-mobile3" href="#">Telescopes <br> <i class="gg-chevron-down"></i></a>
+                    <ul id="dropdown-mobile3">
+                        <li><a class="nav-link-mobile" href="Planets.html">james webb telescope</a></li>
+                        <li><a class="nav-link-mobile" href="Stars.html">Hubble telescope</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+
+
+        <div class="cart">
+            <a href="Planets.html">
+                <button class="btn">Get Started</button>
+            </a>
+            <img id="menu" src="pics/menu.png" width="27" alt="Menu">
+        </div>
+    </header>
+
+    <script>
+        const dropdown = document.getElementById("dropdown");
+        const dropdownMobile = document.getElementById("dropdown-mobile");
+        const more = document.getElementById("mm");
+
+
+        const dropdow2n = document.getElementById("dropdown2");
+        const dropdownMobile2 = document.getElementById("dropdown-mobile2");
+
+        const dropdow3n = document.getElementById("dropdown3");
+        const dropdownMobile3 = document.getElementById("dropdown-mobile3");
+
+        const btn = document.getElementById("ma");
+        const btnMobile = document.getElementById("ma-mobile");
+
+        const btn2 = document.getElementById("ma2");
+        const btnMobile2 = document.getElementById("ma-mobile2");
+
+        const btn3 = document.getElementById("ma3");
+        const btnMobile3 = document.getElementById("ma-mobile3");
+
+             btn.addEventListener("click", () => {
+         if (dropdown.style.display === "none") {
+             dropdown.style.display = "block";
+         } else {
+             dropdown.style.display = "none";
+         }
+        });
+
+        btnMobile.addEventListener("click", () => {
+            if (dropdownMobile.style.display === "none") {
+                dropdownMobile.style.display = "block";
+            } else {
+                dropdownMobile.style.display = "none";
+            }
+        });
+
+        btnMobile2.addEventListener("click", () => {
+            if (dropdownMobile2.style.display === "none") {
+                dropdownMobile2.style.display = "block";
+            } else {
+                dropdownMobile2.style.display = "none";
+            }
+        });
+        btnMobile3.addEventListener("click", () => {
+            if (dropdownMobile3.style.display === "none") {
+                dropdownMobile3.style.display = "block";
+            } else {
+                dropdownMobile3.style.display = "none";
+            }
+        });
+
+             btn2.addEventListener("click", () => {
+         if (dropdown2.style.display === "none") {
+             dropdown2.style.display = "block";
+         } else {
+             dropdown2.style.display = "none";
+         }
+        });
+
+             btn3.addEventListener("click", () => {
+         if (dropdown3.style.display === "none") {
+             dropdown3.style.display = "block";
+         } else {
+             dropdown3.style.display = "none";
+         }
+        });
+
+    
+
+
+
+
+        //Do not touch from bottem of this comment.
+
+        const menu = document.getElementById("menu");
+        
+        menu.addEventListener("click", ()=>{
+            var more = document.getElementById("mm");
+            if (more.style.display === "none"){
+                more.style.display = "block";
+            } else{
+                more.style.display = "none";
+            }
+        })
+    </script>
+</body>
+</html>
